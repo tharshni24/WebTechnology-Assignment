@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Registration</h1>
+        <p>Enter your details to register</p>
+
+        <form id="registrationForm">
+
+            <label for="name">Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span class="error" id="nameError"></span>
+
+            <label for="roll">Roll Number</label>
+            <input type="text" id="roll" placeholder="Enter roll number">
+            <span class="error" id="rollError"></span>
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <span class="error" id="emailError"></span>
+
+            <label for="course">Select Course</label>
+            <select id="course">
+                <option value="">-- Select Course --</option>
+                <option value="CSE">Computer Science Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="ECE">Electronics and Communication</option>
+                <option value="EEE">Electrical and Electronics</option>
+            </select>
+            <span class="error" id="courseError"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password"
+                   placeholder="Enter your password">
+            <span class="error" id="passwordError"></span>
+
+            <label for="document">Upload Document</label>
+            <input type="file" id="document" accept=".pdf,.jpg,.jpeg,.png">
+
+            <button type="submit">Register</button>
+
+            <p id="successMessage"></p>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
